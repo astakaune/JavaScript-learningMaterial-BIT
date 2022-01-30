@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(122, 62, 62, 0)), url('books.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#book-shelf {
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 80%;
+    width: 80%;
+      /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book {
+    height: 150px;
+    width: 400px;
+    border: 3px solid rgb(167, 99, 110);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.book .no-cover {
+    background-color: transparent;
+}
+
+.book .pink-cover {
+    background-color: hotpink;
+}
+
+.book .yellow-cover {
+    background-color: yellowgreen;;
+}
+
+
+/* destytojo gerasis variantas. as nespejau nusirasyti
+
+body {
+    margin: 0;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.books {
+    padding: 10px;
+    border: 1px solid hotpink;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.books div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.books div.no-cover {
+    background-color: transparent;
+}
+
+.books div.pink-cover {
+    background-color: hotpink;
+}
+
+.books div.yellow-cover {
+    background-color: yellowgreen;
+}
+
+h3 {
+    margin: 5px;
+}
+
+i,
+b,
+small {
+    display: block;
+    margin: 3px 5px;
+} */

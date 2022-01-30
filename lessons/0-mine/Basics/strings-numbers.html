@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="strings-numbers.js"></script>
+    <title>Strings and Numbers: methods and properties</title>
+
+    <style>
+        body {
+            background-color:rgb(209, 236, 227);
+        }
+
+        button {
+            background-color:rgb(240, 214, 145);
+            color:hsl(55, 51%, 14%);
+            font-size: 15px;
+            font-weight: bold;
+            border: 1px solid hsl(55, 51%, 14%);            
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 1budas -->
+    <button onclick="document.getElementById('demo1').innerHTML=Date()">The time is?</button>
+    <p id="demo1"></p>
+
+    <!-- 2budas -->
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+    <br> <br>
+
+    <!-- 3budas -->
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo3"></p>
+    <script>
+        function displayDate() {
+            document.getElementById("demo3").innerHTML = Date();
+        }
+    </script>
+
+
+    <button onmouseover="this.innerHTML=Date()">onMouseOver</button>
+    <br> <br>
+
+    <button onmouseout="this.innerHTML=Date()">onMouseOut</button>
+    <br> <br>
+
+    <button onchange="this.innerHTML=Date()">onChange</button>
+    <br> <br>
+
+    <button onclick="this.innerHTML=Date()">onClick</button>
+    <br> <br>
+
+    <button onkeydown="this.innerHTML=Date()">onKeyDown</button>
+    <br> <br>
+
+    <button onload="this.innerHTML=Date()">onLoad</button>
+    <br> <br>
+
+
+    <button style="background-color:rgb(169, 221, 221)" onclick="myFunction2()">Try it</button>
+    <script>
+        function myFunction2() {
+            let text = "     Hello World!     ";
+            alert(text.trim());
+        }
+    </script>
+
+
+    <p id="demo4" style="border: 3px solid rgb(211, 138, 138)"></p>
+    <script>
+        const header = "Templates Literals";
+        const tags = ["template literals", "javascript", "es6", "Samsung s20 fe"];
+        let html = `<h1>${header}</h1><ul>`;
+        for (let x of tags) {
+            html += `<li>${x}</li>`;
+        }
+        html += `</ul>`;
+        document.getElementById("demo4").innerHTML = html;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

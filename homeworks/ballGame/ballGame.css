@@ -1,0 +1,98 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gamer {
+    padding: 20px 40px;
+    margin: 30px;
+    width: 150px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    background-color: #facc6b;
+    background: radial-gradient(#e3e650, #f6f7ed);
+    box-shadow: rgba(243, 243, 243, 0.9) 0px 5px 30px 10px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ball {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 50px;
+    height: 50px;
+    /* background-image: linear-gradient(120deg, red, yellow); */
+    /* background-color: grey; */
+    border: 1px solid grey;
+    border-radius: 50%;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.results {
+    position: fixed;
+    width: 60%;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    padding: 0 30px;
+    margin: 10px;
+    letter-spacing: 1px;
+    background-color: #facc6b;
+    background: radial-gradient(#f3bb7c, #fae8d3);
+    box-shadow: rgba(243, 243, 243, 0.9) 0px 3px 15px 5px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#start {
+    padding: 20px 40px;
+    margin: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    background-color: #facc6b;
+    background: radial-gradient(#e3e650, #f6f7ed);
+    box-shadow: rgba(243, 243, 243, 0.9) 0px 5px 30px 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bold;
+}
+
+#start:hover {
+    background: black;
+    color: #e3e650;
+}
+
+.timer {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    color: #f3bb7c;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}

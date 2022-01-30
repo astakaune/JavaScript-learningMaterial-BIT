@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./errors.js" defer></script>
+		<title>Errors</title>
+		<style>
+			#demo, #demo5, #demo6, #demo7, #demo8, #demo9 {
+				border: 3px solid pink;
+				text-align: center;
+				padding: 20px;
+				margin: 20px;
+				font-size: 20px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				color: rosybrown;
+			}
+			div {
+				padding: 10px 0;
+                margin: 10px 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				border: 3px solid pink;
+			}
+			p {
+				text-align: center;
+			}
+			button {
+				margin: 10px 0;
+			}
+			#demo2, #demo4 {
+				color: rgb(177, 63, 63);
+				border-bottom: 2px dotted rgb(170, 60, 60);
+				font-size: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p id="demo">Error Message..</p>
+
+		<div>
+			<p>Please input a number between 5 and 10:</p>
+			<input id="demo1" type="text" />
+			<!-- <input id="demo1" type="number" min="5" max="10" step="1" /> -->
+			<button type="button" onclick="myFunction()">Test input</button>
+			<p id="demo2">Message here..</p>
+		</div>
+
+		<div>
+			<p>Please input a number between 5 and 10:</p>
+			<input id="demo3" type="text" />
+			<!-- <input id="demo1" type="number" min="5" max="10" step="1" /> -->
+			<button type="button" onclick="myFunction2()">Test input</button>
+			<p id="demo4">Message here..</p>
+		</div>
+
+        <p id="demo5">Error Message..</p>
+        <p id="demo6">Error Message..</p>
+        <p id="demo7">Error Message..</p>
+        <p id="demo8">Error Message..</p>
+        <p id="demo9">Error Message..</p>
+	</body>
+</html>

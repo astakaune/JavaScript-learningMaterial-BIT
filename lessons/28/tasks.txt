@@ -1,0 +1,31 @@
+/* ex1
+1. sukurti klasę Burbulas
+2. Į klasę pridėti construktoriaus metodą
+3. konstruktoriuje pridėti savybę id kuri yra unikalus rand skaicius
+4. pakeičiame burbulai savybę į savybę be reikšmės jokios.
+5. sukurti statinį metodą naujasBurbulas, kurį paleidus 
+    tikrintų ar statinė savybė burbulai yra null. Jeigu 
+    taip, tai jai priskirti naują, tuščią Map tipo objektą.
+6. statiniame metode sukurti naują Burbulo objektą ir jį įrašyti į Mapą, raktu arba indeksu naudojant savybę id.
+7. Konstruktoriuje sukurti naują div elementą, jį pridėti prie objekto savybės elemento, elementui priskirti klasę .ball, elementą įdėti į htmlą.
+8. Į klasę įdedame rand funkciją
+9. Klasėje sukuriame dvi statines savybes w ir h
+10. sukuriame statinį metodą ekranoDydis(), kuris nustatytų ekrano aukštį ir plotį ir rezultatus įrašytų į tas savybes funkcijos naujasBurbulas()
+11. pačioje pradžioje patikrinti ar savybės w ir h turi 
+    reikšmes ir jeigu neturi paleisti metodą ekranoDydis()
+12. Konstruktoriuje sugeneruokite rand reikšmes aukščiui ir pločiui ir pridėkite prie burbulo stiliaus
+13. Sukurti metodą (ne statinį) varyk() kuris priskirtų naujas rand reikšmes aukščio ir pločio burbului
+14. Už klasės ribų sukurti 5 burbulus
+15. ant sukurto burbulo elemento uždėti click eventą kuris paleistų statinį metodą pagautas(id) ir jam perduotų pagauto burbulo id.
+16. evente sustabdyti bublinimą. 
+17. statinis metodas pagautas() savo viduje turi ištrinti burbulą iš html ir tada ištrinti iš mapO
+18. naujai sukurtam burbulo elementui uždėti random background spalvą: 
+    https://css-tricks.com/snippets/javascript/random-hex-color/
+19. pakavot
+20. pridėti į naujasBurbulas click eventą ant bodžio kuris paleistų metodą naujas burbulas. Eventą pridėti tik VIENĄ kartą. metodas sukuria nauja burbula paspaudus ant body.
+21. konstruktoriuje sukurti setInterval paleidimą metodui varyk(). taimerio id priskiriame savybei taimerId
+22. sunaikinus burbulą, sustabdyti ir taimerį
+23. Padaryti mygtuką viduryje, kurį paspaudus būtų sugeneruojami penki burbulai. Tuo metu pats mygtukas paspaudus išnyktų
+24.
+
+*/
