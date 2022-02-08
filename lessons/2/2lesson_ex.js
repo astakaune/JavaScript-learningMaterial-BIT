@@ -157,28 +157,53 @@ console.log("----ex7----");
 const var1 = rand(0, 100);
 const var2 = rand(0, 100);
 const var3 = rand(0, 100);
-console.log("Kintamieji:", var1, var2, var3);
-const masyvas = [var1, var2, var3];
-const masyvasLength1 = masyvas.length;
-console.log("Kintamųjų kiekis:", masyvasLength1);
 
+const masyvas = [var1, var2, var3];
 let masyvasSUM1 = 0;
 for (let i = 0; i < masyvas.length; i++) {
 	masyvasSUM1 += masyvas[i];
 }
-const masyvasAVGaryth1 = (masyvasSUM1 / masyvasLength1).toFixed(0);
+const masyvasAVG1 = (masyvasSUM1 / masyvas.length).toFixed(0);
+console.log("Masyvas:", masyvas);
+console.log("Kintamųjų kiekis:", masyvas.length);
 console.log("Kintamųjų suma:", masyvasSUM1);
-console.log("Kintamųjų aritmetinis vidurkis:", masyvasAVGaryth1);
+console.log("Kintamųjų aritmetinis vidurkis:", masyvasAVG1);
 
-// let masyvasSUM2 = 0;
-// for (let i = 0; i < masyvas.length; i++) {
-// 	if (masyvas[i] >= 10 || masyvas[i] <= 90) {
-// 		masyvas2 = push
-// 		masyvasSUM2 += masyvas[i];
-// 		masyvas = new masyvas;
-// 	}
-// }
-// console.log("Kintamųjų suma, kai 10 < SUM < 90:", masyvasSUM2);
-// const masyvasAVGaryth2 = (masyvasSUM / masyvasLength).toFixed(0);
-// console.log("Kintamųjų aritmetinis vidurkis:", masyvasAVGaryth);
-``
+console.log("--1var--");
+const masyvas2 = [];
+if (var1 >= 10 && var1 <= 90) {
+	masyvas2.push(var1);
+}
+if (var2 >= 10 && var2 <= 90) {
+	masyvas2.push(var2);
+}
+if (var3 >= 10 && var3 <= 90) {
+	masyvas2.push(var3);
+}
+console.log("Masyvas2:", masyvas2);
+const masyvasLength2 = masyvas2.length;
+console.log("Kintamųjų kiekis:", masyvasLength2);
+let masyvasSUM2 = 0;
+for (let i = 0; i < masyvas2.length; i++) {
+	masyvasSUM2 += masyvas2[i];
+}
+const masyvasAVG2 = (masyvasSUM2 / masyvasLength2).toFixed(0);
+console.log("Kintamųjų suma:", masyvasSUM2);
+console.log("Kintamųjų aritmetinis vidurkis:", masyvasAVG2);
+
+console.log("--2var--");
+const masyvas3 = [];
+let masyvasSUM3 = 0;
+for (let i = 0; i < masyvas.length; i++) {
+	if (masyvas[i] >= 10 && masyvas[i] <= 90) {
+		masyvas3.push(masyvas[i]);
+		masyvasSUM3 += masyvas[i];
+	}
+}
+const masyvasAVG3 = (masyvasSUM3 / masyvas3.length).toFixed(0);
+console.log("Masyvas3:", masyvas3);
+console.log("Kintamųjų kiekis:", masyvas3.length);
+console.log("Kintamųjų suma:", masyvasSUM3);
+console.log("Kintamųjų aritmetinis vidurkis:", masyvasAVG3);
+
+
