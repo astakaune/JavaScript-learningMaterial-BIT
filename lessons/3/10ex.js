@@ -129,22 +129,67 @@ console.log(" ");
 console.log("--------9ex-----------");
 //9. Išvesti skaičių daug ir suskaičiuoti iš kelių duotų skaičių: 5, 10, 33
 // jis dalijasi be liekanos. Rezultatą išvesti.
-const numberBIG = rand(1000000, 9999999);
-let counter = 0;
-console.log("Number:", numberBIG);
+// const numberBIG = rand(1000000, 9999999);
+// let counter = 0;
+// console.log("Number:", numberBIG);
 
-if ((numberBIG % 1 == 0) || (numberBIG % 2 == 0) || (numberBIG % 5 == 0)) {
-	counter = 1;
-    console.log('vienas');
-} else if (((numberBIG % 1 == 0) && (numberBIG % 2 == 0)) || ((numberBIG % 1 == 0) && (numberBIG % 5 == 0)) || ((numberBIG % 2 == 0) && (numberBIG % 5 == 0))) {
-	counter = 2;
-    console.log('du');
-} else if ((numberBIG % 1 == 0) && (numberBIG % 2 == 0) && (numberBIG % 5 == 0)) {
-    counter = 3;
-    console.log('penki');
-}
-console.log(counter);
+// if ((numberBIG % 1 == 0) || (numberBIG % 2 == 0) || (numberBIG % 5 == 0)) {
+// 	counter = 1;
+//     console.log('vienas');
+// } else if (((numberBIG % 1 == 0) && (numberBIG % 2 == 0)) || ((numberBIG % 1 == 0) && (numberBIG % 5 == 0)) || ((numberBIG % 2 == 0) && (numberBIG % 5 == 0))) {
+// 	counter = 2;
+//     console.log('du');
+// } else if ((numberBIG % 1 == 0) && (numberBIG % 2 == 0) && (numberBIG % 5 == 0)) {
+//     counter = 3;
+//     console.log('penki');
+// }
+// console.log(counter);
 
 console.log(" ");
 console.log("--------10ex----------");
-//10. Išvesti as ir tu kintamuosius ir kas laimėjo as ar tu
+//10. Išvesti as ir tu kintamuosius ir kas laimėjo as ar tu zaidime VASKIČI: 'popierius, zirkles, sulinys'.
+let I = rand(0, 2) ? (rand(0, 1) ? "popierius" : "zirkles") : "sulinys";
+let you = rand(0, 2) ? (rand(0, 1) ? "popierius" : "zirkles") : "sulinys";
+console.log("I -", I, ". ", "you -", you);
+
+if (I == you) {
+	console.log("Lygiosios. Bandome dar kartą");
+} else if ((I == "sulinys" && you == "zirkles") || (I == "zirkles" && you == "popierius") || (I == "popierius" && you == "sulinys")) {
+	console.log("Laimėjau aš");
+} else {
+	console.log("Laimėjai tu");
+}
+
+console.log(" ");
+console.log("--------11ex----------");
+// Surasti ir i console.log išvesti dviejų mažesnių kintamųjų sumą
+let a = rand(2, 10);
+let b = rand(2, 10);
+let c = rand(2, 10);
+console.log("Kintamieji:", a, b, c);
+
+// destytojo trumpasis sprendimas
+if (a >= b && a >= c) {
+	console.log("b + c:", b + c);
+} else if (b >= c) {
+	console.log("a + c:", a + c);
+} else {
+	console.log("Dviejų mažesnių kintamųjų suma yra:", a + b);
+}
+
+// destytojo ilgasis sprendimas
+if (a >= b) {
+	if (a >= c) {
+		console.log("b + c", b + c);
+	}
+}
+if (b > a) {
+	if (b >= c) {
+		console.log("a + c:", a + c);
+	}
+}
+if (c > a) {
+	if (c > b) {
+		console.log("a + b:", a + b);
+	}
+}
